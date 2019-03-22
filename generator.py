@@ -2,32 +2,29 @@ import glob, os, shutil
 from PIL import Image
 import numpy as np
 import cv2
+import settings
 
-singers = [
-    'dam vinh hung',
-    'dan truong',
-    'ha anh tuan',
-    'my tam',
-    'huong tram',
-    'son tung'
-]
 
+def remove_file(path):
+    files = glob.glob(path + '*')
+    for f in files:
+        os.remove(f)
+
+remove_file(settings.OUTPUT_DIR)
+remove_file(settings.TESTING_DIR)
+remove_file(settings.TRAINING_DIR)
+
+singers = settings.SINGERS
 for singer in singers:
-    path = 'dataSet/' + singer
+    path = settings.DATASET_DIR + singer
     i = 1
     total = len(os.listdir(path))
     for filename in os.listdir(path):
-        # Rename image
-        # dst = path + '/' + singer + '.' + str(i) + '.png'
-        # src = path + '/' + filename
-        # os.rename(src, dst)
-
-        # move to training/testing
         src = path + '/' + filename
         if (i < total*0.7):
-            shutil.copy2(src, 'dataSet/training')
+            shutil.copy2(src, settings.TRAINING_DIR)
         else:
-            shutil.copy2(src, 'dataSet/testing')
+            shutil.copy2(src, settings.TESTING_DIR)
         i += 1
 
 
