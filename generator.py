@@ -3,6 +3,8 @@ import settings
 
 
 def remove_file(path):
+    if os.path.isdir(path) == False:
+        os.mkdir(path)
     files = glob.glob(path + '*')
     for f in files:
         os.remove(f)
