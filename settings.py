@@ -16,3 +16,4 @@ TRAINING_DIR = 'training/'
 DATASET_DIR = 'dataSet/'
 
 FEATURE = 'haarcascade_frontalface_default.xml'
+DETECTOR_IMG = 'img.jpeg'

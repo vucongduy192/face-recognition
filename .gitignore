@@ -1,4 +1,3 @@
-/dataSet
-/testing
-/training
-/output
+testing/*
+training/*
+output/*

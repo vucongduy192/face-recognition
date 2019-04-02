@@ -1,7 +1,8 @@
 import numpy as np
 import cv2
+import settings
 
-input = cv2.imread('img.jpeg')
+input = cv2.imread(settings.DETECTOR_IMG)
 gray_img = cv2.cvtColor(input, cv2.COLOR_BGR2GRAY)
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
