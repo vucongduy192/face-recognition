@@ -7,7 +7,6 @@ SINGERS = [
     # 'chi pu',
     # 'lam truong',
     # 'ho ngoc ha'
-
 ]
 
 OUTPUT_DIR = 'output/'
