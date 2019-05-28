@@ -1,4 +1,4 @@
-/dataSet
-/testing
-/training
-/output
+testing/*
+training/*
+output/*
+__pycache__
