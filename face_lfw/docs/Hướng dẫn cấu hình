@@ -1,0 +1,18 @@
+Hướng dẫn cấu hình môi trương
+B1: Cài đặt python, lưu ý chọn đúng phiên bản python3.5
+Ở đây, do đã cài đặt nên nhanh hơn bình thường, chúng ta kiểm tra
+lại phiên bản
+
+B2: Tiếp theo là Pip, đây là công cụ giúp cài đặt nhanh các thư viện
+mở rộng của Python, kiểm tra phiên bản
+
+Một số thư viện chương trình cần tới như numpy, Pillow, OpenCv
+Có thể cài phiên bản lastest nhưng với OpenCv thì nên cài đúng bản, vì
+thư viện lớn và thường xuyên cập nhật
+
+OpenCv được chia thành nhiều gói nhỏ, chúng ta sẽ cần install 2 gói sau
+
+Để kiểm tra cài đặt thành công, chúng ta sử dụng giao diện console của
+p. Sau khi import thành công các thư viện trên, chúng ta
+sẽ bắt đầu tải project về và thử nghiệm
+
